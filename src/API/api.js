@@ -9,7 +9,7 @@ export async function generateImage(prompt) {
 }
 
 export async function postImage(body) {
-  const res = await axios.post("http://localhost:3000/api/post", body);
+  const res = await axios.post("/api/post", body);
   return res;
 }
 
