@@ -176,8 +176,8 @@ function CreatePost() {
               flex="flex"
               leftIcon={<AutoAwesome />}
               onClick={handleGenerateImage}
-              isLoading={generateImageIsPending}
-              isDisabled={author === "" || prompt === ""}
+              isloading={generateImageIsPending}
+              isdisabled={author === "" || prompt === ""}
             />
             <Button
               text="Post Image"
@@ -185,8 +185,8 @@ function CreatePost() {
               type="secondary"
               leftIcon={<CreateRounded />}
               onClick={handlePostImage}
-              isLoading={postImageIsPending}
-              isDisabled={author === "" || prompt === "" || !generateImageData}
+              isloading={postImageIsPending}
+              isdisabled={author === "" || prompt === "" || !generateImageData}
             />
           </Actions>
         </Form>
