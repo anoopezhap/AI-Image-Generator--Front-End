@@ -87,7 +87,7 @@ function ImageCard({ item }) {
             <Avatar>{item?.name[0]}</Avatar>
             {item?.name}
           </Author>
-          <DownloadRounded onClick={() => downloadImage(item?.name)} />
+          <DownloadRounded onClick={() => downloadImage(item?.photo)} />
         </div>
       </HoverOverlay>
     </Card>
