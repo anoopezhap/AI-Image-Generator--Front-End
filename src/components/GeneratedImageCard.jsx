@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { CircularProgress } from "@mui/material";
 
-const Container = styled.div`
+const ContainerImage = styled.div`
   flex: 1;
   min-height: 300px;
   display: flex;
@@ -24,7 +24,7 @@ const Image = styled.img`
 
 function GeneratedImageCard({ src, loading }) {
   return (
-    <Container>
+    <ContainerImage>
       {loading ? (
         <>
           <CircularProgress
@@ -37,7 +37,7 @@ function GeneratedImageCard({ src, loading }) {
           {src ? <Image src={src} /> : <>Write a prompt to generate image </>}
         </>
       )}
-    </Container>
+    </ContainerImage>
   );
 }
 

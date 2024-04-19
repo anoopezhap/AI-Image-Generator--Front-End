@@ -71,10 +71,10 @@ function ImageCard({ item }) {
         style={{ borderRadius: "12px" }}
         width="100%"
         src={item?.photo}
-        alt={item?.promt}
+        alt={item?.prompt}
       />
       <HoverOverlay>
-        <Promt>{item?.promt}</Promt>
+        <Promt>{item?.prompt}</Promt>
         <div
           style={{
             width: "100%",
@@ -84,10 +84,10 @@ function ImageCard({ item }) {
           }}
         >
           <Author>
-            <Avatar>{item?.author[0]}</Avatar>
-            {item?.author}
+            <Avatar>{item?.name[0]}</Avatar>
+            {item?.name}
           </Author>
-          <DownloadRounded onClick={() => downloadImage(item?.photo)} />
+          <DownloadRounded onClick={() => downloadImage(item?.name)} />
         </div>
       </HoverOverlay>
     </Card>

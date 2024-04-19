@@ -49,12 +49,7 @@ function GenerateImageForm() {
       </Top>
       <Body>
         <TextInput label="Author" placeholder="Enter your name" />
-        <TextInput
-          label="Promt"
-          placeholder="Enter your Promt"
-          rows="8"
-          textArea
-        />
+        <TextInput label="Prompt" placeholder="Enter your Promt" rows="8" />
         **You can post the image to the community
       </Body>
       <Actions>
